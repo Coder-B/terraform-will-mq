@@ -1,7 +1,7 @@
 provider "alicloud" {
   version              = ">=1.56.0"
   region               = var.region != "" ? var.region : null
-  configuration_source = "terraform-will-modules/kvstore"
+  configuration_source = "terraform-will-modules/mq"
 }
 
 #################

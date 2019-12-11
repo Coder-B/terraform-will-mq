@@ -32,6 +32,6 @@ func TestTerraformBasicExampleNew(t *testing.T) {
 	validateServerIsWorking(t, terraformOptions)
 
 	mqInstanceId := terraform.Output(t, terraformOptions, "id")
-	assert.NotNil(t, mqInstanceId) 
+	assert.NotNil(t, mqInstanceId)
 	
 }

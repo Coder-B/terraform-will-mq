@@ -1,15 +1,15 @@
 output "id" {
-  value = alicloud_ons_instance.mqInstance.id
+  value = module.mqInstance.id
 }
 
 output "instance_type" {
-  value = alicloud_ons_instance.mqInstance.instance_type
+  value = module.mqInstance.instance_type
 }
 
 output "instance_status" {
-  value = alicloud_ons_instance.mqInstance.instance_status
+  value = module.mqInstance.instance_status
 }
 
 output "irelease_timed" {
-  value = alicloud_ons_instance.mqInstance.release_time
+  value = module.mqInstance.release_time
 }
