@@ -1,15 +1,15 @@
 output "id" {
-  value = module.mqInstance.id
+  value = module.mq_instance.id
 }
 
 output "instance_type" {
-  value = module.mqInstance.instance_type
+  value = module.mq_instance.instance_type
 }
 
 output "instance_status" {
-  value = module.mqInstance.instance_status
+  value = module.mq_instance.instance_status
 }
 
 output "irelease_timed" {
-  value = module.mqInstance.release_time
+  value = module.mq_instance.release_time
 }
