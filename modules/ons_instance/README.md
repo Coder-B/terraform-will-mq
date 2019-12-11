@@ -1,9 +1,4 @@
-# terraform-will-mq
-
-This Terraform module will create a message queue instance.
-
-These types of resources are supported:
-- [alicloud_ons_instance](https://www.terraform.io/docs/providers/alicloud/r/ons_instance.html)
+# alicloud_ons_instance
 
 ## Inputs
 
