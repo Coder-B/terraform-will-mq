@@ -5,12 +5,27 @@ This Terraform module will create a message queue instance.
 These types of resources are supported:
 - [alicloud_ons_instance](https://www.terraform.io/docs/providers/alicloud/r/ons_instance.html)
 
+## Usage
+you can write these code in you main.tf
+```
+module "mq" {
+  source  = "Coder-B/mq/will"
+  version = "0.0.4"
+  name = "message_queue_instance"
+  remark = "this is a message queue"
+  access_key = "${write your access key here}"
+  secret_key = "${write your secret key here}"
+}
+```
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 |name|The name of mq instance| string| "" | yes|
 |remark|The remark of mq instance| string| "" | no|
+|access_key|user access key| string| "" | yes|
+|secret_key|user secret key| string| "" | yes|
 
 
 ## Outputs
