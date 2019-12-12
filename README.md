@@ -10,13 +10,16 @@ you can write these code in you main.tf
 ```
 module "mq" {
   source  = "Coder-B/mq/will"
-  version = "0.0.4"
+  version = "1.0.0"
   name = "message_queue_instance"
   remark = "this is a message queue"
-  access_key = "${write your access key here}"
-  secret_key = "${write your secret key here}"
 }
 ```
+**key settings**<br>
+Setting `access_key` and `secret_key` values through environment variables:
+
+    - ALICLOUD_ACCESS_KEY
+    - ALICLOUD_SECRET_KEY
 
 ## Inputs
 
@@ -24,8 +27,6 @@ module "mq" {
 |------|-------------|:----:|:-----:|:-----:|
 |name|The name of mq instance| string| "" | yes|
 |remark|The remark of mq instance| string| "" | no|
-|access_key|user access key| string| "" | yes|
-|secret_key|user secret key| string| "" | yes|
 
 
 ## Outputs
