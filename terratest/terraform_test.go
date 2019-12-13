@@ -27,9 +27,6 @@ func TestTerraformBasicExampleNew(t *testing.T) {
 	  
 	// This will run `terraform init` and `terraform apply` and fail the test if there are any errors
 	terraform.InitAndApply(t, terraformOptions)
-	  
-	// Validate your code works as expected
-	validateServerIsWorking(t, terraformOptions)
 
 	mqInstanceId := terraform.Output(t, terraformOptions, "id")
 	assert.NotNil(t, mqInstanceId)
